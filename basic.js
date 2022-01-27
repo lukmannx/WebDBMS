@@ -70,3 +70,28 @@ function kendaraan(){
     }
 }
 kendaraan() //memanggil function kendaraan
+
+//!closure
+/**
+ * closure adalah cara mengakses variabel dari parent scope di dalam child scope parent
+ */
+
+// function helo(sapa) {
+//     var text = 'Assalamualaikum ' + sapa
+//     return function () {
+//         console.log(text)
+//     }
+// }
+// var nama = helo("Ahik")
+// nama()
+
+//chalange
+function name(nama, kelas) {
+    var fullName = 'Nama : '+nama
+    var kela = 'Kelas : '+kelas
+    return function (){
+        console.log(fullName +'\n'+kela)
+    }
+}
+var cape = name('Lukman Hakim','rpl a')
+cape()
