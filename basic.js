@@ -60,7 +60,7 @@ second()
  * const = bersifat scope/tidak bisa di ubah
  */
 
-var a = 'mobil' //global scope |dapat dipanggil di semua tempat
+/*var a = 'mobil' //global scope |dapat dipanggil di semua tempat
 function kendaraan(){
     a = 'sepeda' //local scope |dapat dipanggil hanya di dalam function
     console.log(a)
@@ -76,22 +76,130 @@ kendaraan() //memanggil function kendaraan
  * closure adalah cara mengakses variabel dari parent scope di dalam child scope parent
  */
 
-// function helo(sapa) {
-//     var text = 'Assalamualaikum ' + sapa
-//     return function () {
-//         console.log(text)
-//     }
-// }
-// var nama = helo("Ahik")
-// nama()
-
-//chalange
-function name(nama, kelas) {
-    var fullName = 'Nama : '+nama
-    var kela = 'Kelas : '+kelas
-    return function (){
-        console.log(fullName +'\n'+kela)
+/*function helo(sapa) {
+    var text = 'Assalamualaikum ' + sapa
+    return function () {
+        console.log(text)
     }
 }
-var cape = name('Lukman Hakim','rpl a')
-cape()
+var nama = helo("Ahik")
+nama()
+
+//chalange
+
+//? function name(nama, kelas) {
+//?     var fullName = 'Nama : '+nama
+//?     var kela = 'Kelas : '+kelas
+//?     return function (){
+//?         console.log(fullName +'\n'+kela)
+//?     }
+//? }
+//? var cape = name('Lukman Hakim','rpl a')
+//? cape()
+
+//!tipe data pada js
+/**
+ * tipe data adalah karakteristik dari nilai sebuah data, di js terdapat 7 yaitu: null, undifined, boolean, number, bigInteger, string, dan symbol (es6)
+ * dan tipe data kompleks object
+ * 
+ * loosely typed yaitu variabel tidak menentukan sebuah tipe data, melainkan nilai yang menentukan tipe data tersebut
+ */
+
+// let a = 'saya'
+// let b = 2
+// let z = null
+
+// console.log(typeof z)
+
+/**
+ * tipe data undifined
+ * tipe data yang nilainya kosong atau tidak di definisikan
+ */
+
+/**
+ * tipe data null
+ * tipe data primitif yang nilainya kosong atau null
+ */
+
+// let a = null
+// console.log(a)
+
+/**
+ * String 
+ * String merupakan tipe data yang menampung katrakter symbolnya '',"",``
+ */
+
+// let a = 18
+// if(a <= 17){
+//     a = 'anda belum cukup umur'
+//     console.log(a/2)
+// }else{
+//     a = 'cukup umur'
+//     console.log(a)
+// }
+
+//  let d = 'faiq paig'
+//  console.log(d.length)
+ 
+//  let kata = 'helloworld'
+//  for(let i = 0; i < kata.length; i++){
+//      console.log(kata[i])
+//  }
+
+//!menghitung jumlah
+let a = ''
+
+//!
+/**
+ * Boolean
+ * sebuah tipe data yang menentukan kebenaran, dan hanya memiliki 2 nilai yaitu true dan false
+ */
+
+let belajar = true
+if(belajar){
+    console.log('Kelas ini sedang belajar')
+}
+
+//!Object
+/**
+ * object merupakan tipe data complex yang berisis props(properti)
+ */
+
+// let object = {} // null
+// console.log(typeof object)
+
+// let identitas = {
+//     firstName : 'Dias',
+//     lastName : 'Utsman',
+//     email : 'hmberr@gmail.com',
+//     instagram : 'utssrr',
+//     addres : {
+//         planet : 'bekasi',
+//         number : '17',
+//         street : 'jalan robod'
+//     }
+// }
+//cara memanggil object
+
+// console.log('Nama saya : '+identitas.firstName)
+// console.log('saya tinggal di'+identitas.addres.planet)
+
+//cara memanggil object dengan array
+// console.log(identitas['firstName']+identitas.lastName)
+// console.log(identitas['addres']['number'])
+let tugas = {
+    kendaraan : {
+        mobil : 'pejit',
+        motor : 'supraX',
+        sepeda : 'bemeex'},
+    jalan : 'jalan berkah',
+    kota : 'bekasi',
+    platNomer : 'jabodetabek',
+    kereta : {
+        namaKa : 'Argo Bromo anggrek',
+        tujuan : 'senen - pasar turi',
+    }
+    
+}
+
+console.table(tugas)
