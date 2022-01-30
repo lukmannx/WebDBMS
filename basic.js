@@ -155,10 +155,10 @@ let a = ''
  * sebuah tipe data yang menentukan kebenaran, dan hanya memiliki 2 nilai yaitu true dan false
  */
 
-let belajar = true
-if(belajar){
-    console.log('Kelas ini sedang belajar')
-}
+// let belajar = true
+// if(belajar){
+//     console.log('Kelas ini sedang belajar')
+// }
 
 //!Object
 /**
@@ -187,19 +187,32 @@ if(belajar){
 //cara memanggil object dengan array
 // console.log(identitas['firstName']+identitas.lastName)
 // console.log(identitas['addres']['number'])
-let tugas = {
-    kendaraan : {
-        mobil : 'pejit',
-        motor : 'supraX',
-        sepeda : 'bemeex'},
-    jalan : 'jalan berkah',
-    kota : 'bekasi',
-    platNomer : 'jabodetabek',
-    kereta : {
-        namaKa : 'Argo Bromo anggrek',
-        tujuan : 'senen - pasar turi',
-    }
+// let tugas = {
+//     kendaraan : {
+//         mobil : 'pejit',
+//         motor : 'supraX',
+//         sepeda : 'bemeex'},
+//     jalan : 'jalan berkah',
+//     kota : 'bekasi',
+//     platNomer : 'jabodetabek',
+//     kereta : {
+//         namaKa : 'Argo Bromo anggrek',
+//         tujuan : 'senen - pasar turi',
+//     }
     
-}
+// }
 
-console.table(tugas)
+// console.table(tugas)
+
+const mobil = 'pejit'
+const motor  = 'harley'
+ console.log(`Saya punya mobil ${mobil} dan motor saya ${motor}`)
+
+ //shorthand named property
+ let [a,b,c] = [[true,2,3]]
+
+ //ternarary operator //seperti if else tapi lebih singkat
+ let a = 9
+  a<10
+  ? console.log('nilai a kurang dari 10')
+  : console.log('nilai a lebih dari 10')
