@@ -21,4 +21,4 @@ function pajaq(motor, callback) {
         console.log(`motor ${motor} tidak bayar pajak`)
     }
 }
-pajaq(1999, tahun)
+pajaq(2004, cc)

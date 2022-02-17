@@ -198,13 +198,13 @@ let a = ''
 //     kereta : {
 //         namaKa : 'Argo Bromo anggrek',
 //         tujuan : 'senen - pasar turi',
-//     }
+//     } //    key      //value
     
 // }
 
 // console.table(tugas)
 
-const mobil = 'pejit'
+/*const mobil = 'pejit'
 const motor  = 'harley'
  console.log(`Saya punya mobil ${mobil} dan motor saya ${motor}`)
 
@@ -216,3 +216,78 @@ const motor  = 'harley'
   a<10
   ? console.log('nilai a kurang dari 10')
   : console.log('nilai a lebih dari 10')
+
+/**
+ ** function
+ * merupakan sebuah blok kode untuk membungkus sebuah proses penulisan kode agar tidak diulangi kembali
+ */
+//?normal function
+/*
+function name(params) {
+    console.log('saya belajar javaScript')
+}
+name()
+
+//?anonymous function
+
+const anon = function(param){
+    console.log(param)
+}
+anon('Saya belajar javaScript')
+
+//?arrow function
+
+let third = (parameter) => {
+    console.log(parameter)
+}
+third("Ini adalah arrow function")
+*/
+//*high-order-function
+//fungsi yang menerima argumen berupa fungsi lain serta return bisa berupa fungsi juga
+/*
+function genap(number) {
+    return number % 2 == 0
+}
+
+function print(number, callback) {
+    let isTrue = callback(number)
+    if (ifTrue){
+        console.log(`${number} adalah bilangan genap`)
+    }else{
+        console.log(`${number} adalah bilangan ganjil`)
+    }
+}
+print(10, genap)
+*/
+//ex
+function kecepatan(mobil) {
+    return mobil >= 100
+}
+function warna(mobil) {
+    return mobil == 'merah'
+}
+function kendaraan(mobil, callback) {
+    let a = callback(mobil)
+    if(a){
+        console.log(`mobil dengan kecepatan ${mobil} adalah mobil saya`)
+    }else{
+        console.log(`mobil dengan kecepatan ${mobil} adalah bukan mobil saya`)
+    }
+}
+kendaraan(100, kecepatan)
+
+//normal function
+/*
+function genap(number) {
+    return number % 2 == 0
+}
+
+function print(number) {
+    let isTrue = genap(number)
+    if (isTrue) {
+        console.log(`${number} adalah bilangan genap`)
+    }else{
+        console.log(`${number} adalah bilangan ganjil`)
+    }
+}
+*/
